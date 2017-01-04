@@ -267,5 +267,5 @@ class AwsStorage():
 
         normalized_path = join(path_segments[0], *path_segments[1:]).lstrip('/') if len(path_segments) > 1 else path_segments[0]
         if normalized_path.endswith('/'):
-            normalized_path += ".no_extension"
+            normalized_path += "no_extension"
         return normalized_path
